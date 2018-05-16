@@ -7,7 +7,6 @@ PODS:
 
 DEPENDENCIES:
   - wgPersonInfoKit (from `../`)
-  - wgPersonPrefrenceCatogeryKit
 
 EXTERNAL SOURCES:
   wgPersonInfoKit:
@@ -18,6 +17,6 @@ SPEC CHECKSUMS:
   wgPersonInfoKit: 4daf3746c4da4af946ba1089203680563042f4c5
   wgPersonPrefrenceCatogeryKit: 601066b5aa42f366d6ae5bd6a7f5a5bd42ba5d43
 
-PODFILE CHECKSUM: d9ec7591dd577eb0fb47fad056df446db4e9eac9
+PODFILE CHECKSUM: 194b78a7897fc5300de4f4363a62f2a5d31358ff
 
 COCOAPODS: 1.3.1
