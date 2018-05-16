@@ -1,0 +1,27 @@
+{
+  "name": "wgPersonInfoKit",
+  "version": "1",
+  "summary": "A short description of wgPersonInfoKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wgModularization/wgPersonInfoKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wanggang1128": "978159546@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wgModularization/wgPersonInfoKit.git",
+    "tag": "1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "wgPersonInfoKit/Classes/**/*",
+  "dependencies": {
+    "wgPersonPrefrenceCatogeryKit": [
+
+    ]
+  }
+}

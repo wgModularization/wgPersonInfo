@@ -22,7 +22,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B44069E9B87CAF5464481354 /* Pods_wgPersonInfoKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C5253F351593D6B336E0F6 /* Pods_wgPersonInfoKit_Tests.framework */; };
 		FAD89BECFAD81D477EAAF939 /* Pods_wgPersonInfoKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CAE7AD11EAAD22086658C4E /* Pods_wgPersonInfoKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,10 +58,8 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6903ECAC59E96EA01B14E47D /* Pods-wgPersonInfoKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wgPersonInfoKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wgPersonInfoKit_Tests/Pods-wgPersonInfoKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6CAE7AD11EAAD22086658C4E /* Pods_wgPersonInfoKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wgPersonInfoKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7AA9E2014D316943A7BDD111 /* Pods-wgPersonInfoKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wgPersonInfoKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wgPersonInfoKit_Tests/Pods-wgPersonInfoKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2BCCE0CE94D407ED6ACADBB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C4B932E81982E0A590AF421B /* Pods-wgPersonInfoKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wgPersonInfoKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-wgPersonInfoKit_Example/Pods-wgPersonInfoKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +85,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B44069E9B87CAF5464481354 /* Pods_wgPersonInfoKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +96,6 @@
 			children = (
 				D5AB54FBEE1A9F41EDF8B117 /* Pods-wgPersonInfoKit_Example.debug.xcconfig */,
 				C4B932E81982E0A590AF421B /* Pods-wgPersonInfoKit_Example.release.xcconfig */,
-				7AA9E2014D316943A7BDD111 /* Pods-wgPersonInfoKit_Tests.debug.xcconfig */,
-				6903ECAC59E96EA01B14E47D /* Pods-wgPersonInfoKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -223,12 +217,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "wgPersonInfoKit_Tests" */;
 			buildPhases = (
-				B4B2E4F1CC0B14AE89ACDEC8 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				353C5FDD29956FED241F0FAA /* [CP] Embed Pods Frameworks */,
-				78C6805587816EB38B4B9DE2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,30 +295,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-wgPersonInfoKit_Example/Pods-wgPersonInfoKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 				"${BUILT_PRODUCTS_DIR}/wgPersonInfoKit/wgPersonInfoKit.framework",
+				"${BUILT_PRODUCTS_DIR}/wgPersonPrefrenceCatogeryKit/wgPersonPrefrenceCatogeryKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/wgPersonInfoKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/wgPersonPrefrenceCatogeryKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wgPersonInfoKit_Example/Pods-wgPersonInfoKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		353C5FDD29956FED241F0FAA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wgPersonInfoKit_Tests/Pods-wgPersonInfoKit_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D8493C80AF07A7988CD45D4 /* [CP] Check Pods Manifest.lock */ = {
@@ -348,21 +328,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		78C6805587816EB38B4B9DE2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wgPersonInfoKit_Tests/Pods-wgPersonInfoKit_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		818B1075E05711D41708237E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,24 +341,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wgPersonInfoKit_Example/Pods-wgPersonInfoKit_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B4B2E4F1CC0B14AE89ACDEC8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wgPersonInfoKit_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -560,7 +507,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AA9E2014D316943A7BDD111 /* Pods-wgPersonInfoKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -584,7 +530,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6903ECAC59E96EA01B14E47D /* Pods-wgPersonInfoKit_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
