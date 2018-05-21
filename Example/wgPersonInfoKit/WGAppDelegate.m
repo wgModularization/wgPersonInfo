@@ -7,12 +7,19 @@
 //
 
 #import "WGAppDelegate.h"
+#import "WGViewController.h"
 
 @implementation WGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    WGViewController *vc = [[WGViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.backgroundColor = [UIColor lightGrayColor];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

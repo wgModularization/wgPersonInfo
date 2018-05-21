@@ -103,11 +103,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/wgCommonKit/wgCommonKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/wgPersonInfoKit/wgPersonInfoKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/wgPersonPrefrenceCatogeryKit/wgPersonPrefrenceCatogeryKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/wgCommonKit/wgCommonKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/wgPersonInfoKit/wgPersonInfoKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/wgPersonPrefrenceCatogeryKit/wgPersonPrefrenceCatogeryKit.framework"
 fi

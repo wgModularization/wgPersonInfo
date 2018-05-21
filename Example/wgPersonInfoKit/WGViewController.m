@@ -7,6 +7,7 @@
 //
 
 #import "WGViewController.h"
+#import "WGPersonInfoViewController.h"
 
 @interface WGViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    WGPersonInfoViewController *vc = [[WGPersonInfoViewController alloc] init];
+    vc.name = @"1111";
+    vc.age = 18;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

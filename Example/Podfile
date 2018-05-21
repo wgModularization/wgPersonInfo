@@ -5,6 +5,5 @@ use_frameworks!
 
 target 'wgPersonInfoKit_Example' do
   pod 'wgPersonInfoKit', :path => '../'
-#  pod 'wgPersonPrefrenceCatogeryKit'
 
 end
